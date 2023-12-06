@@ -155,13 +155,11 @@
 }
 .banner{
     width: 95vw;
-    height: 380px;
     margin: 0px auto;
     overflow: hidden;
     margin-top: 35px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
     column-gap: 15px;
 }
 .left-banner{
@@ -170,6 +168,11 @@
     position: relative;
     border-radius: 8px;
     overflow: hidden;
+}
+.left-banner-image{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
 }
 .left-banner-image img{
     width: 100%;
@@ -219,6 +222,10 @@
     overflow: hidden;
     border-radius: 8px;
     position: relative;
+}
+.banner-product .image{
+    width: 100%;
+    height: 100%;
 }
 .banner-product .image img{
     width: 100%;
@@ -867,6 +874,24 @@
     border-radius: 50%;
     background-color: #111;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media all and (max-width:425px) {
     .first-part .search-box{
       display: none;
@@ -895,6 +920,12 @@
     }
     .nav-page.active{
         transform: translateX(0px);
+    }
+    .banner{
+        height: fit-content;
+        grid-template-columns: 1fr;
+        row-gap: 15px;
+        padding: 10px;
     }
     .left-banner-text{
         top: 20px;
@@ -928,39 +959,43 @@
         grid-template-columns:1fr;
         grid-template-rows: repeat(6,320px);
     }
-    
-}
-
-
-
-
-
-@media all and (max-width:768px) {
-    .first-part .search-box{
-        width: 300px;
-    }
-    .nav-page{
-        column-gap: 20px;
-    }
-    .banner{
-        height: fit-content;
-        grid-template-columns: 1fr;
-        row-gap: 15px;
-        padding: 10px;
-    }
-    .menu{
-        flex-direction: column;
-        row-gap: 10px;
-    }
     .cards{
-        grid-template-columns:repeat(2,1fr);
-        grid-template-rows: 340px 340px;
+        grid-template-columns:1fr;
     }
     .feature-products{
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(2,1fr);
      }
-  
+     .popular-products{
+        grid-template-columns: repeat(2,1fr);
+        row-gap: 10px;
+    }
+    .brands{
+        grid-template-columns: repeat(4,1fr);
+    }
+    .brands img{
+        width: 50px;
+    }
+    .latest-news{
+        grid-template-columns: repeat(1,1fr);
+        row-gap: 15px;
+    }
+    .footer .newsletter{
+        flex-direction: column;
+        row-gap: 15px;
+    }
+    .footer .newsletter .newsletter-search{
+        width: 400px;
+    }
+    .contact-page{
+        grid-template-columns: repeat(2,1fr);
+        row-gap: 25px;
+    }
 }
+
+
+
+
+
 
 
 
