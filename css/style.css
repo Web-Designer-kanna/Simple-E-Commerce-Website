@@ -1707,11 +1707,18 @@
         grid-template-columns: repeat(2,1fr);
        grid-template-rows: repeat(8,330px);
         grid-gap: 10px;
-        padding: 0px 10px;
+        padding: 15px 10px;
         padding-bottom: 20px;
     }
     .sort-products{
+        width: 160px;
+    }
+    .sort-products .sort-pro-right,
+    .sort-products .sort-pro-left strong{
         display: none;
+    }
+    .sort-products .sort-pro-left select{
+        margin: 0px;
     }
     .random-product{
         height: auto;
